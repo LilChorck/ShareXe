@@ -1,0 +1,190 @@
+﻿{extend name="public/base"}
+		{block name="heads"}
+		<!-- Font family -->
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+
+		<!-- Sidemenu Css -->
+		<link href="__STATIC__\plugins\fullside-menu\css\style.css" rel="stylesheet">
+		<link href="__STATIC__\plugins\fullside-menu\waves.min.css" rel="stylesheet">
+
+		<!-- Dashboard Css -->
+		<link href="__STATIC__\acss\dashboard.css" rel="stylesheet">
+
+		<!-- c3.js Charts Plugin -->
+		<link href="__STATIC__\plugins\charts-c3\c3-chart.css" rel="stylesheet">
+
+		<!-- c3.js Charts Plugin -->
+		 <link href="__STATIC__\plugins\gallery\gallery.css" rel="stylesheet">
+
+		<!-- Custom scroll bar css-->
+		<link href="__STATIC__\plugins\scroll-bar\jquery.mCustomScrollbar.css" rel="stylesheet">
+
+		<!---Font icons-->
+		<link href="__STATIC__\acss\icons.css" rel="stylesheet">
+
+	</head>
+	<body class="">
+		<div id="global-loader"></div>
+		<div class="page">
+			<div class="page-main">
+				{/block}	
+		{block name="others"}
+					<div class=" content-area">
+						<div class="page-header">
+							<h1 class="page-title">Gallery</h1>
+							<div class="page-options d-flex">
+								<select class="form-control custom-select w-auto">
+									<option value="asc">Latest</option>
+									<option value="desc">Oldest</option>
+								</select>
+								<div class="input-icon ml-2">
+									<span class="input-icon-addon">
+										<i class="fe fe-search"></i>
+									</span>
+									<input type="text" class="form-control w-10" placeholder="Search photo">
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="demo-gallery">
+								<ul id="lightgallery" class="list-unstyled row">
+									<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="__STATIC__\aimages/photos/1.jpg" data-src="__STATIC__\aimages/photos/1.jpg" data-sub-html="<h4>Gallery Image 1</h4><p> Many desktop publishing packages and web page editors now use Lorem Ipsum</p>">
+										<a href="">
+											<img class="img-responsive" src="__STATIC__\aimages\photos\1.jpeg" alt="Thumb-1">
+										</a>
+									</li>
+									<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="__STATIC__\aimages/photos/2.jpg" data-src="__STATIC__\aimages/photos/2.jpg" data-sub-html="<h4>Gallery Image 2</h4><p> Many desktop publishing packages and web page editors now use Lorem Ipsum</p>">
+										<a href="">
+											<img class="img-responsive" src="__STATIC__\aimages\photos\2.jpeg" alt="Thumb-2">
+										</a>
+									</li>
+									<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="__STATIC__\aimages/photos/3.jpg" data-src="__STATIC__\aimages/photos/3.jpg" data-sub-html="<h4>Gallery Image 3</h4><p> Many desktop publishing packages and web page editors now use Lorem Ipsum</p>">
+										<a href="">
+											<img class="img-responsive" src="__STATIC__\aimages\photos\3.jpeg" alt="Thumb-1">
+										</a>
+									</li>
+									<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="__STATIC__\aimages/photos/4.jpg" data-src="__STATIC__\aimages/photos/4.jpg" data-sub-html=" <h4>Gallery Image 4</h4><p> Many desktop publishing packages and web page editors now use Lorem Ipsum</p>">
+										<a href="">
+											<img class="img-responsive" src="__STATIC__\aimages\photos\4.jpeg" alt="Thumb-2">
+										</a>
+									</li>
+									<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="__STATIC__\aimages/photos/5.jpg" data-src="__STATIC__\aimages/photos/5.jpg" data-sub-html="<h4>Gallery Image 5</h4><p> Many desktop publishing packages and web page editors now use Lorem Ipsum</p>">
+										<a href="">
+											<img class="img-responsive" src="__STATIC__\aimages\photos\5.jpeg" alt="Thumb-1">
+										</a>
+									</li>
+									<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="__STATIC__\aimages/photos/6.jpg" data-src="__STATIC__\aimages/photos/6.jpg" data-sub-html="<h4>Gallery Image 6</h4><p> Many desktop publishing packages and web page editors now use Lorem Ipsum</p>">
+										<a href="">
+											<img class="img-responsive" src="__STATIC__\aimages\photos\6.jpeg" alt="Thumb-2">
+										</a>
+									</li>
+									<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="__STATIC__\aimages/photos/7.jpg" data-src="__STATIC__\aimages/photos/7.jpg" data-sub-html="<h4>Gallery Image 7</h4><p> Many desktop publishing packages and web page editors now use Lorem Ipsum</p>">
+										<a href="">
+											<img class="img-responsive" src="__STATIC__\aimages\photos\7.jpeg" alt="Thumb-1">
+										</a>
+									</li>
+									<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="__STATIC__\aimages/photos/8.jpg" data-src="__STATIC__\aimages/photos/8.jpg" data-sub-html="<h4>Gallery Image 8</h4><p> Many desktop publishing packages and web page editors now use Lorem Ipsum</p>">
+										<a href="">
+											<img class="img-responsive" src="__STATIC__\aimages\photos\8.jpeg" alt="Thumb-2">
+										</a>
+									</li>
+									<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="__STATIC__\aimages/photos/9.jpg" data-src="__STATIC__\aimages/photos/9.jpg" data-sub-html="<h4>Gallery Image 9</h4><p> Many desktop publishing packages and web page editors now use Lorem Ipsum</p>">
+										<a href="">
+											<img class="img-responsive" src="__STATIC__\aimages\photos\9.jpeg" alt="Thumb-1">
+										</a>
+									</li>
+									<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="__STATIC__\aimages/photos/10.jpg" data-src="__STATIC__\aimages/photos/10.jpg" data-sub-html="<h4>Gallery Image 10</h4><p> Many desktop publishing packages and web page editors now use Lorem Ipsum</p>">
+										<a href="">
+											<img class="img-responsive" src="__STATIC__\aimages\photos\10.jpeg" alt="Thumb-2">
+										</a>
+									</li>
+									<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="__STATIC__\aimages/photos/11.jpg" data-src="__STATIC__\aimages/photos/11.jpg" data-sub-html="<h4>Gallery Image 11</h4><p> Many desktop publishing packages and web page editors now use Lorem Ipsum</p>">
+										<a href="">
+											<img class="img-responsive" src="__STATIC__\aimages\photos\11.jpeg" alt="Thumb-1">
+										</a>
+									</li>
+									<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="__STATIC__\aimages/photos/12.jpg" data-src="__STATIC__\aimages/photos/12.jpg" data-sub-html="<h4>Gallery Image 12</h4><p> Many desktop publishing packages and web page editors now use Lorem Ipsum</p>">
+										<a href="">
+											<img class="img-responsive" src="__STATIC__\aimages\photos\12.jpeg" alt="Thumb-2">
+										</a>
+									</li>
+								</ul>
+							</div>
+					    </div>
+						<div class="row mb-5">
+						    <div class="col-md-6 mt-1 d-none d-md-block">1 - 10 of 234 photos</div>
+							<div class="col-md-6 ">
+								<div class="float-right">
+									<ul class="pagination">
+										<li class="page-item page-prev disabled">
+											<a class="page-link" href="#" tabindex="-1">Prev</a>
+										</li>
+										<li class="page-item active"><a class="page-link" href="#">1</a></li>
+										<li class="page-item"><a class="page-link" href="#">2</a></li>
+										<li class="page-item"><a class="page-link" href="#">3</a></li>
+										<li class="page-item"><a class="page-link" href="#">4</a></li>
+										<li class="page-item"><a class="page-link" href="#">5</a></li>
+										<li class="page-item page-next">
+											<a class="page-link" href="#">Next</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+					    </div>
+					</div>
+				</div>
+			</div>
+
+			<!--footer-->
+			<footer class="footer">
+				<div class="container">
+					<div class="row align-items-center flex-row-reverse">
+						<div class="col-lg-12 col-sm-12 mt-3 mt-lg-0 text-center">
+							Copyright © 2018 <a href="http://www.bootstrapmb.com/" title="bootstrapmb">adminor</a>. Designed by <a href="#">Spruko</a> All rights reserved.
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- End Footer-->
+		</div>
+
+		<!-- Back to top -->
+		<a href="#top" id="back-to-top" style="display: inline;"><i class="fa fa-angle-up"></i></a>
+
+		<!-- Dashboard js -->
+		{load file="__STATIC__\ajs\vendors\jquery-3.2.1.min.js"}
+		{load file="__STATIC__\ajs\vendors\bootstrap.bundle.min.js"}
+		{load file="__STATIC__\ajs\vendors\jquery.sparkline.min.js"}
+		{load file="__STATIC__\ajs\vendors\selectize.min.js"}
+		{load file="__STATIC__\ajs\vendors\jquery.tablesorter.min.js"}
+		{load file="__STATIC__\ajs\vendors\circle-progress.min.js"}
+		{load file="__STATIC__\plugins\rating\jquery.rating-stars.js"}
+
+		<!-- Fullside-menu Js-->
+		{load file="__STATIC__\plugins\fullside-menu\jquery.slimscroll.min.js"}
+		{load file="__STATIC__\plugins\fullside-menu\waves.min.js"}
+
+		<!-- Gallery js -->
+		{load file="__STATIC__\plugins\gallery\picturefill.js"}
+        {load file="__STATIC__\plugins\gallery\lightgallery.js"}
+        {load file="__STATIC__\plugins\gallery\lg-pager.js"}
+        {load file="__STATIC__\plugins\gallery\lg-autoplay.js"}
+        {load file="__STATIC__\plugins\gallery\lg-fullscreen.js"}
+        {load file="__STATIC__\plugins\gallery\lg-zoom.js"}
+        {load file="__STATIC__\plugins\gallery\lg-hash.js"}
+        {load file="__STATIC__\plugins\gallery\lg-share.js"}
+
+		<!-- Custom scroll bar Js-->
+		{load file="__STATIC__\plugins\scroll-bar\jquery.mCustomScrollbar.concat.min.js"}
+
+		<!-- Custom Js-->
+		{load file="__STATIC__\ajs\custom.js"}
+
+		<!-- Gallery js -->
+		<script>
+            lightGallery(document.getElementById('lightgallery'));
+        </script>
+
+	</body>
+</html>
+{/block}

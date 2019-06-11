@@ -1,0 +1,13 @@
+
+#创建数据库
+CREATE DATABASE myblog;
+
+#使用数据库
+USE myblog;
+
+#创建用户数据表
+CREATE TABLE tnt_user(
+`id` INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT COMMENT'主键ID字段',
+`username` VARCHAR(30) NOT NULL UNIQUE KEY COMMENT'用户名字段,唯一',
+`password` CHAR(32) NOT NULL COMMENT'密码字段,MD5加密,定长32位'
+)ENGINE=InnoDB DEFAULT CHARSET=UTF8 COMMENT'用户表,存储用户基本信息';

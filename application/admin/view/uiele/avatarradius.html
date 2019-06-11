@@ -1,0 +1,214 @@
+﻿{extend name="public/base"}
+		{block name="heads"}
+		<!-- Font family-->
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+
+		<!-- Sidemenu Css -->
+		<link href="__STATIC__\plugins\fullside-menu\css\style.css" rel="stylesheet">
+		<link href="__STATIC__\plugins\fullside-menu\waves.min.css" rel="stylesheet">
+
+		<!-- Dashboard Css -->
+		<link href="__STATIC__\acss\dashboard.css" rel="stylesheet">
+
+		<!-- c3.js Charts Plugin -->
+		<link href="__STATIC__\plugins\charts-c3\c3-chart.css" rel="stylesheet">
+
+		<!-- Custom scroll bar css-->
+		<link href="__STATIC__\plugins\scroll-bar\jquery.mCustomScrollbar.css" rel="stylesheet">
+
+		<!---Font icons-->
+		<link href="__STATIC__\acss\icons.css" rel="stylesheet">
+
+	</head>
+	<body class="">
+		<div id="global-loader"></div>
+		<div class="page">
+			<div class="page-main">
+				{/block}	
+		{block name="others"}
+					<div class=" content-area">
+						<div class="page-header">
+							<h4 class="page-title">RadiusAvatars</h4>
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="#">Elements</a></li>
+								<li class="breadcrumb-item active" aria-current="page">RadiusAvatars</li>
+							</ol>
+						</div>
+						<div class="row row-deck">
+							<div class="col-md-12 col-lg-6">
+								<div class="card">
+									<div class="card-header">
+										<h4 class="card-title">Simple avatar</h4>
+									</div>
+									<div class="card-body">
+										<div class="text-wrap">
+											<div class="example">
+												<div class="avatar-list">
+													<span class="avatar bradius cover-image" data-image-src="__STATIC__\aimages/faces/male/1.jpg"></span>
+													<span class="avatar bradius cover-image" data-image-src="__STATIC__\aimages/faces/male/2.jpg"></span>
+													<span class="avatar bradius cover-image" data-image-src="__STATIC__\aimages/faces/female/1.jpg"></span>
+													<span class="avatar bradius cover-image" data-image-src="__STATIC__\aimages/faces/female/2.jpg"></span>
+													<span class="avatar bradius cover-image" data-image-src="__STATIC__\aimages/faces/male/3.jpg"></span>
+												</div>
+											</div>
+											<div class="highlight">
+						<pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"avatar bradius"</span> <span class="na">style=</span><span class="s">"background-image: url(./__STATIC__\aimages/faces/male/1.jpg)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"avatar bradius"</span> <span class="na">style=</span><span class="s">"background-image: url(__STATIC__\aimages/faces/male/2.jpg)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"avatar bradius"</span> <span class="na">style=</span><span class="s">"background-image: url(__STATIC__\aimages/faces/female/1.jpg)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"avatar bradius"</span> <span class="na">style=</span><span class="s">"background-image: url(__STATIC__\aimages/faces/female/2.jpg)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"avatar bradius"</span> <span class="na">style=</span><span class="s">"background-image: url(__STATIC__\aimages/faces/male/3.jpg)"</span><span class="nt">&gt;&lt;/span&gt;</span></code></pre>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 col-lg-6">
+								<div class="card">
+									<div class="card-header">
+										<h4 class="card-title">Avatar size</h4>
+									</div>
+									<div class="card-body">
+										<div class="text-wrap">
+											<div class="example">
+												<div class="avatar-list">
+													<span class="avatar avatar-sm bradius cover-image" data-image-src="__STATIC__\aimages/faces/male/4.jpg"></span>
+													<span class="avatar bradius cover-image" data-image-src="__STATIC__\aimages/faces/female/3.jpg"></span>
+													<span class="avatar avatar-md bradius cover-image" data-image-src="__STATIC__\aimages/faces/male/5.jpg"></span>
+													<span class="avatar avatar-lg bradius cover-image" data-image-src="__STATIC__\aimages/faces/male/6.jpg"></span>
+													<span class="avatar avatar-xl bradius cover-image" data-image-src="__STATIC__\aimages/faces/female/4.jpg"></span>
+													<span class="avatar avatar-xxl bradius cover-image" data-image-src="__STATIC__\aimages/faces/male/7.jpg"></span>
+												</div>
+											</div>
+											<div class="highlight">
+						<pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"avatar avatar-sm"</span> <span class="na">style=</span><span class="s">"background-image: url(./__STATIC__\aimages/faces/male/4.jpg)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"avatar bradius"</span> <span class="na">style=</span><span class="s">"background-image: url(./__STATIC__\aimages/faces/female/3.jpg)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"avatar avatar-md bradius"</span> <span class="na">style=</span><span class="s">"background-image: url(__STATIC__\aimages/faces/male/6.jpg)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"avatar avatar-lg bradius"</span> <span class="na">style=</span><span class="s">"background-image: url(__STATIC__\aimages/faces/male/6.jpg)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"avatar avatar-xl bradius"</span> <span class="na">style=</span><span class="s">"background-image: url(__STATIC__\aimages/faces/female/4.jpg)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"avatar avatar-xxl bradius"</span> <span class="na">style=</span><span class="s">"background-image: url(__STATIC__\aimages/faces/male/7.jpg)"</span><span class="nt">&gt;&lt;/span&gt;</span></code></pre>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row row-deck">
+							<div class="col-md-12 col-lg-6">
+								<div class="card">
+									<div class="card-header">
+										<h4 class="card-title">Avatar status</h4>
+									</div>
+									<div class="card-body">
+										<div class="text-wrap">
+											<div class="example">
+												<div class="avatar-list">
+													<span class="avatar bradius cover-image" data-image-src="__STATIC__\aimages/faces/male/8.jpg"></span>
+													<span class="avatar bradius cover-image" data-image-src="__STATIC__\aimages/faces/female/5.jpg">
+														<span class="avatar-status"></span>
+													</span>
+													<span class="avatar bradius cover-image" data-image-src="__STATIC__\aimages/faces/male/9.jpg">
+														<span class="avatar-status bg-red"></span>
+													</span>
+													<span class="avatar bradius cover-image" data-image-src="__STATIC__\aimages/faces/female/6.jpg">
+														<span class="avatar-status bg-green"></span>
+													</span>
+													<span class="avatar bradius cover-image" data-image-src="__STATIC__\aimages/faces/female/7.jpg">
+														<span class="avatar-status bg-yellow"></span>
+													</span>
+												</div>
+											</div>
+											<div class="highlight">
+						<pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"avatar"</span> <span class="na">style=</span><span class="s">"background-image: url(__STATIC__\aimages/faces/male/8.jpg)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"avatar bradius"</span> <span class="na">style=</span><span class="s">"background-image: url(__STATIC__\aimages/faces/female/5.jpg)"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"avatar-status"</span><span class="nt">&gt;&lt;/span&gt;</span>
+	<span class="nt">&lt;/span&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"avatar bradius"</span> <span class="na">style=</span><span class="s">"background-image: url(__STATIC__\aimages/faces/male/9.jpg)"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"avatar-status bg-red"</span><span class="nt">&gt;&lt;/span&gt;</span>
+	<span class="nt">&lt;/span&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"avatar bradius"</span> <span class="na">style=</span><span class="s">"background-image: url(__STATIC__\aimages/faces/female/6.jpg)"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"avatar-status bg-green"</span><span class="nt">&gt;&lt;/span&gt;</span>
+	<span class="nt">&lt;/span&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"avatar bradius"</span> <span class="na">style=</span><span class="s">"background-image: url(__STATIC__\aimages/faces/female/7.jpg)"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"avatar-status bg-yellow"</span><span class="nt">&gt;&lt;/span&gt;</span>
+	<span class="nt">&lt;/span&gt;</span></code></pre>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-12 col-lg-6">
+								<div class="card">
+									<div class="card-header">
+										<h4 class="card-title">Avatars list</h4>
+									</div>
+									<div class="card-body">
+										<div class="text-wrap ">
+											<div class="example">
+												<div class="avatar-list avatar-list-stacked">
+													<span class="avatar bradius cover-image" data-image-src="__STATIC__\aimages/faces/male/10.jpg"></span>
+													<span class="avatar bradius cover-image" data-image-src="__STATIC__\aimages/faces/female/8.jpg"></span>
+													<span class="avatar bradius cover-image" data-image-src="__STATIC__\aimages/faces/female/9.jpg"></span>
+													<span class="avatar bradius cover-image" data-image-src="__STATIC__\aimages/faces/female/10.jpg"></span>
+													<span class="avatar bradius cover-image" data-image-src="__STATIC__\aimages/faces/male/11.jpg"></span>
+													<span class="avatar bradius">+8</span>
+												</div>
+											</div>
+											<div class="highlight">
+						<pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"avatar-list avatar-list-stacked bradius"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"avatar bradius"</span> <span class="na">style=</span><span class="s">"background-image: url(__STATIC__\aimages/faces/female/10.jpg)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"avatar bradius"</span> <span class="na">style=</span><span class="s">"background-image: url(__STATIC__\aimages/faces/female/8.jpg)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"avatar bradius"</span> <span class="na">style=</span><span class="s">"background-image: url(__STATIC__\aimages/faces/female/9.jpg)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"avatar bradius"</span> <span class="na">style=</span><span class="s">"background-image: url(__STATIC__\aimages/faces/female/10.jpg)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"avatar bradius"</span> <span class="na">style=</span><span class="s">"background-image: url(__STATIC__\aimages/faces/male/11.jpg)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"avatar bradius"</span><span class="nt">&gt;</span>+8<span class="nt">&lt;/span&gt;</span>
+	<span class="nt">&lt;/div&gt;</span></code></pre>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--footer-->
+			<footer class="footer">
+				<div class="container">
+					<div class="row align-items-center flex-row-reverse">
+						<div class="col-lg-12 col-sm-12 mt-3 mt-lg-0 text-center">
+							Copyright © 2018 <a href="http://www.bootstrapmb.com/" title="bootstrapmb">adminor</a>. Designed by <a href="#">Spruko</a> All rights reserved.
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- End Footer-->
+		</div>
+
+		<!-- Back to top-->
+		<a href="#top" id="back-to-top" style="display: inline;"><i class="fa fa-angle-up"></i></a>
+
+		<!-- Dashboard js -->
+		{load file="__STATIC__\ajs\vendors\jquery-3.2.1.min.js"}
+		{load file="__STATIC__\ajs\vendors\bootstrap.bundle.min.js"}
+		{load file="__STATIC__\ajs\vendors\jquery.sparkline.min.js"}
+		{load file="__STATIC__\ajs\vendors\selectize.min.js"}
+		{load file="__STATIC__\ajs\vendors\jquery.tablesorter.min.js"}
+		{load file="__STATIC__\ajs\vendors\circle-progress.min.js"}
+		{load file="__STATIC__\plugins\rating\jquery.rating-stars.js"}
+
+		<!-- Fullside-menu Js-->
+		{load file="__STATIC__\plugins\fullside-menu\jquery.slimscroll.min.js"}
+		{load file="__STATIC__\plugins\fullside-menu\waves.min.js"}
+
+		<!-- Custom scroll bar Js-->
+		{load file="__STATIC__\plugins\scroll-bar\jquery.mCustomScrollbar.concat.min.js"}
+
+		<!-- custom js-->
+        {load file="__STATIC__\ajs\custom.js"}
+
+
+	</body>
+</html>
+{/block}

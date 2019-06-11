@@ -1,0 +1,422 @@
+<div class="wrapper">
+<nav id="sidebar" class="nav-sidebar">
+						<ul class="list-unstyled components" id="accordion">
+							<div class="user-profile">
+								<div class="dropdown user-pro-body">
+									<div><img src="__STATIC__/aimages/faces/female/25.jpeg" alt="user-img" class="img-circle"></div>
+									<div class="mb-2"><a href="#" class="" data-toggle="" aria-haspopup="true" aria-expanded="false"> <span class="font-weight-semibold">LiuChuang</span>  </a>
+									<br><span class="text-gray">欢迎进入后台</span>
+									</div>
+								</div>
+							</div>
+							<li class="">
+								<a href="#User" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">
+									<i class="fa fa-user-o mr-2"></i> 用户管理
+								</a>
+									<ul class="collapse list-unstyled" id="User" data-parent="#accordion">
+										<li>
+											<a href="{:url('user/datatable')}">用户列表</a>
+										</li>
+										<li>
+											<a href="{:url('user/add')}">添加用户</a>
+										</li>
+									</ul>
+							</li>
+							<li class="">
+								<a href="#Art" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">
+									<i class="fa fa-list mr-2"></i> 文章管理
+								</a>
+									<ul class="collapse list-unstyled" id="Art" data-parent="#accordion">
+										<li>
+											<a href="{:url('article/list')}">文章列表</a>
+										</li>
+										<li>
+											<a href="{:url('article/add')}">添加文章</a>
+										</li>
+									</ul>
+							</li>
+							<li class="">
+								<a href="{:url('index/index1')}">
+									<i class="fa fa-desktop mr-2"></i> 数据统计
+								</a>
+							</li>
+							<li class="">
+								<a href="#Apps" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">
+									<i class="fa fa-snowflake-o mr-2"></i> 应用效果
+								</a>
+								<ul class="collapse list-unstyled" id="Apps" data-parent="#accordion">
+									<li>
+										<a href="{:url('apps/cards')}">Cards design</a>
+									</li>
+									<li>
+										<a href="{:url('apps/chat')}">Default Chat</a>
+									</li>
+									<li>
+										<a href="{:url('apps/notify')}">Notifications</a>
+									</li>
+									<li>
+										<a href="{:url('apps/sweetalert')}">Sweet alerts</a>
+									</li>
+									<li>
+										<a href="{:url('apps/rangeslider')}">Range slider</a>
+									</li>
+									<li>
+										<a href="{:url('apps/scroll')}">Content Scroll bar</a>
+									</li>
+									<li>
+										<a href="{:url('apps/counters')}">Counters</a>
+									</li>
+									<li>
+										<a href="{:url('apps/rating')}">Rating </a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#pageSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false"><i class="fa fa-area-chart mr-2"></i> 统计表</a>
+								<ul class="collapse list-unstyled" id="pageSubmenu" data-parent="#accordion">
+									<li>
+										<a href="{:url('charts/chartist')}">Chartjs Charts </a>
+									</li>
+									<li>
+										<a href="{:url('charts/dygraph')}">Dygraph Charts</a>
+									</li>
+									<li>
+										<a href="{:url('charts/echart')}">Echart Charts</a>
+									</li>
+									<li>
+										<a href="{:url('charts/flot')}">Flot Charts</a>
+									</li>
+									<li>
+										<a href="{:url('charts/high')}">High Charts</a>
+									</li>
+									<li>
+										<a href="{:url('charts/nvd3')}">Nvd3 Charts</a>
+									</li>
+									<li>
+										<a href="{:url('charts/morris')}">Morris Charts</a>
+									</li>
+									<li class="secondlevel">
+										<a href="#Submenu4" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">C3 charts</a>
+										<ul class="collapse list-unstyled" id="Submenu4">
+											<li>
+												<a href="{:url('charts/charts')}">C3 Bar Charts</a>
+											</li>
+											<li>
+												<a href="{:url('charts/line')}">C3 Line Charts</a>
+											</li>
+											<li>
+												<a href="{:url('charts/donut')}">C3 Donut Charts</a>
+											</li>
+											<li>
+												<a href="{:url('charts/pie')}">C3 Pie charts</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="">
+								<a href="#Uielements" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">
+									<i class="mdi mdi-buffer mr-2"></i>UI 元素
+								</a>
+								<ul class="collapse list-unstyled" id="Uielements" data-parent="#accordion">
+									<li>
+										<a href="{:url('uiele/alerts')}">Alerts</a>
+									</li>
+									<li>
+										<a href="{:url('uiele/buttons')}">Buttons</a>
+									</li>
+									<li>
+										<a href="{:url('uiele/colors')}">Colors</a>
+									</li>
+									<li>
+										<a href="{:url('uiele/avatarsquare')}">Avatar-Square</a>
+									</li>
+									<li>
+										<a href="{:url('uiele/avatarround')}">Avatar-Rounded</a>
+									</li>
+									<li>
+										<a href="{:url('uiele/avatarradius')}">Avatar-Radius</a>
+									</li>
+									<li>
+										<a href="{:url('uiele/dropdown')}">Drop downs</a>
+									</li>
+									<li>
+										<a href="{:url('uiele/list')}">List</a>
+									</li>
+									<li>
+										<a href="{:url('uiele/tags')}">Tags</a>
+									</li>
+									<li>
+										<a href="{:url('uiele/pagination')}">Pagination</a>
+									</li>
+									<li>
+										<a href="{:url('uiele/navigation')}">Navigation</a>
+									</li>
+									<li>
+										<a href="{:url('uiele/typography')}">Typography</a>
+									</li>
+									<li>
+										<a href="{:url('uiele/breadcrumbs')}">Breadcrumbs</a>
+									</li>
+									<li>
+										<a href="{:url('uiele/badge')}">Badges</a>
+									</li>
+									<li>
+										<a href="{:url('uiele/thumbnails')}">Thumbnails</a>
+									</li>
+									<li>
+										<a href="{:url('uiele/jumbotron')}">Jumbotron</a>
+									</li>
+									<li>
+										<a href="{:url('uiele/panels')}">Panels</a>
+									</li>
+									<li>
+										<a href="{:url('uiele/mediaobject')}">Media Object</a>
+									</li>
+									<li>
+										<a href="{:url('uiele/loaders')}">Loaders</a>
+									</li>
+								</ul>
+							</li>
+							<li class="">
+								<a href="#Uidesign" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">
+									<i class="fa fa-tachometer mr-2"></i> UI 设计
+								</a>
+								<ul class="collapse list-unstyled" id="Uidesign" data-parent="#accordion">
+									<li>
+										<a href="{:url('uidesign/accordion')}">Accordions</a>
+									</li>
+									<li>
+										<a href="{:url('uidesign/tabs')}">Tabs</a>
+									</li>
+									<li>
+										<a href="{:url('uidesign/chart')}">Charts</a>
+									</li>
+									<li>
+										<a href="{:url('uidesign/modal')}">Modal</a>
+									</li>
+									<li>
+										<a href="{:url('uidesign/tooltipandpopover')}">Tooltip and popover</a>
+									</li>
+									<li>
+										<a href="{:url('uidesign/progress')}">Progress</a>
+									</li>
+									<li>
+										<a href="{:url('uidesign/carousel')}">Carousels</a>
+									</li>
+									<li>
+										<a href="{:url('uidesign/headers')}">Headers</a>
+									</li>
+									<li>
+										<a href="{:url('uidesign/footers')}">Footers</a>
+									</li>
+									<li>
+										<a href="{:url('uidesign/cryptoCurrencies')}">Crypto-currencies</a>
+									</li>
+									<li>
+										<a href="{:url('uidesign/userslist')}">User List</a>
+									</li>
+									<li>
+										<a href="{:url('uidesign/search')}">Search page</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="{:url('widgets/index')}" class=" wave-effect"><i class="fa fa-cubes mr-2"></i> 窗口</a>
+							</li>
+							<li class="">
+								<a href="#pages" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">
+									<i class="mdi mdi-file mr-2"></i> 页面
+								</a>
+								<ul class="collapse list-unstyled" id="pages" data-parent="#accordion">
+									<li>
+										<a href="{:url('pages/profile')}">Profile</a>
+									</li>
+									<li>
+										<a href="{:url('pages/editprofile')}">Edit Profile</a>
+									</li>
+									<li>
+										<a href="{:url('pages/email')}">Email</a>
+									</li>
+									<li>
+										<a href="{:url('pages/emailservices')}">Email Inbox</a>
+									</li>
+									<li>
+										<a href="{:url('pages/gallery')}" class=" wave-effect"> Gallery</a>
+									</li>
+									<li>
+										<a href="{:url('pages/about')}">About Company</a>
+									</li>
+									<li>
+										<a href="{:url('pages/companyhistory')}">Company History</a>
+									</li>
+									<li>
+										<a href="{:url('pages/services')}">Services</a>
+									</li>
+									<li>
+										<a href="{:url('pages/faq')}">FAQS</a>
+									</li>
+									<li>
+										<a href="{:url('pages/terms')}">Terms and Conditions</a>
+									</li>
+									<li>
+										<a href="{:url('pages/invoice')}">Invoice</a>
+									</li>
+									<li>
+										<a href="{:url('pages/pricing')}">Pricing Tables</a>
+									</li>
+									<li>
+										<a href="{:url('pages/blog')}">Blog</a>
+									</li>
+									<li>
+										<a href="{:url('pages/empty')}">Empty Page</a>
+									</li>
+									<li>
+										<a href="{:url('pages/construction')}">Under Construction</a>
+									</li>
+								</ul>
+							</li>
+							<li class="">
+								<a href="#Forms" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">
+									<i class="mdi mdi-arrange-send-backward mr-2"></i> 表单
+								</a>
+								<ul class="collapse list-unstyled" id="Forms" data-parent="#accordion">
+									<li>
+										<a href="{:url('forms/formele')}">Form Elements</a>
+									</li>
+									<li>
+										<a href="{:url('forms/formwizard')}">Form-wizard Elements</a>
+									</li>
+									<li>
+										<a href="{:url('forms/wysiwyag')}">Text Editor</a>
+									</li>
+								</ul>
+							</li>
+							<li class="">
+								<a href="#Submenu1" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">
+									<i class="fa fa-calendar mr-2"></i> 日程表
+								</a>
+								<ul class="collapse list-unstyled" id="Submenu1" data-parent="#accordion">
+									<li>
+										<a href="{:url('calendar/index')}">Default calendar</a>
+									</li>
+									<li>
+										<a href="{:url('calendar/index2')}">Full calendar</a>
+									</li>
+								</ul>
+							</li>
+							<li class="">
+								<a href="#Icons" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">
+									<i class="fa fa-bandcamp mr-2"></i> 小图标
+								</a>
+								<ul class="collapse list-unstyled" id="Icons" data-parent="#accordion">
+									<li>
+										<a href="{:url('icons/icons')}">Font Awesome</a>
+									</li>
+									<li>
+										<a href="{:url('icons/icons2')}">Material Design Icons</a>
+									</li>
+									<li>
+										<a href="{:url('icons/icons3')}">Simple Line Iocns</a>
+									</li>
+									<li>
+										<a href="{:url('icons/icons4')}">Feather Icons</a>
+									</li>
+									<li>
+										<a href="{:url('icons/icons5')}">Ionic Icons</a>
+									</li>
+									<li>
+										<a href="{:url('icons/icons6')}">Flag Icons</a>
+									</li>
+									<li>
+										<a href="{:url('icons/icons7')}">pe7 Icons</a>
+									</li>
+									<li>
+										<a href="{:url('icons/icons8')}">Themify Icons</a>
+									</li>
+									<li>
+										<a href="{:url('icons/icons9')}">Typicons Icons</a>
+									</li>
+									<li>
+										<a href="{:url('icons/icons10')}">Weather Icons</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="maps.html" class=" wave-effect"><i class="fa fa-map-marker mr-2"></i> 地图</a>
+							</li>
+							<li class="">
+								<a href="#Submenu2" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">
+									<i class="fa fa-crosshairs mr-2"></i> 用户 页面
+								</a>
+								<ul class="collapse list-unstyled" id="Submenu2" data-parent="#accordion">
+									<li>
+										<a href="{:url('user/login')}">Login</a>
+									</li>
+									<li>
+										<a href="{:url('user/register')}">Register</a>
+									</li>
+									<li>
+										<a href="{:url('user/forgotpwd')}">Forgot password</a>
+									</li>
+									<li>
+										<a href="{:url('user/lockscreen')}">Lock screen</a>
+									</li>
+								</ul>
+							</li>
+							<li class="">
+								<a href="#Submenu3" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">
+									<i class="fa fa-table mr-2"></i> 表格
+								</a>
+								<ul class="collapse list-unstyled" id="Submenu3" data-parent="#accordion">
+									<li>
+										<a href="{:url('tables/tables')}">Default table</a>
+									</li>
+									<li>
+										<a href="{:url('tables/datatable')}">Data Table</a>
+									</li>
+								</ul>
+							</li>
+							<li class="">
+								<a href="#Submenu6" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">
+									<i class="fa fa-shopping-cart mr-2"></i> 商城
+								</a>
+								<ul class="collapse list-unstyled" id="Submenu6" data-parent="#accordion">
+									<li>
+										<a href="{:url('ecommerce/shop')}">Products</a>
+									</li>
+									<li>
+										<a href="{:url('ecommerce/shopdescription')}">Product Details</a>
+									</li>
+									<li>
+										<a href="{:url('ecommerce/cart')}">Shopping Cart</a>
+									</li>
+								</ul>
+							</li>
+							<li class="">
+								<a href="#Submenu5" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">
+									<i class="fa fa-exclamation-triangle mr-2"></i> 报错页面
+								</a>
+								<ul class="collapse list-unstyled" id="Submenu5" data-parent="#accordion">
+									<li>
+										<a href="{:url('error/err400')}">400 Error</a>
+									</li>
+									<li>
+										<a href="{:url('error/err401')}">401 Error</a>
+									</li>
+									<li>
+										<a href="{:url('error/err403')}">403 Error</a>
+									</li>
+									<li>
+										<a href="{:url('error/err404')}">404 Error</a>
+									</li>
+									<li>
+										<a href="{:url('error/err500')}">500 Error</a>
+									</li>
+									<li>
+										<a href="{:url('error/err503')}">503 Error</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>

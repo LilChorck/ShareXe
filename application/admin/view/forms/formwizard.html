@@ -1,0 +1,225 @@
+﻿{extend name="public/base"}
+		{block name="heads"}
+		<!-- Font Family -->
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+
+		<!-- Sidemenu Css -->
+		<link href="__STATIC__\plugins\fullside-menu\css\style.css" rel="stylesheet">
+		<link href="__STATIC__\plugins\fullside-menu\waves.min.css" rel="stylesheet">
+
+		<!-- Dashboard Css -->
+		<link href="__STATIC__\acss\dashboard.css" rel="stylesheet">
+
+		<!-- c3.js Charts Plugin -->
+		<link href="__STATIC__\plugins\charts-c3\c3-chart.css" rel="stylesheet">
+
+		<!-- forn-wizard css-->
+		<link href="__STATIC__\plugins\forn-wizard\css\material-bootstrap-wizard.css" rel="stylesheet">
+		<link href="__STATIC__\plugins\forn-wizard\css\demo.css" rel="stylesheet">
+
+		<!-- Custom scroll bar css-->
+		<link href="__STATIC__\plugins\scroll-bar\jquery.mCustomScrollbar.css" rel="stylesheet">
+
+		<!---Font icons-->
+		<link href="__STATIC__\acss\icons.css" rel="stylesheet">
+
+	</head>
+	<body class="">
+		<div id="global-loader"></div>
+		<div class="page">
+			<div class="page-main">
+				{/block}	
+		{block name="others"}
+					<div class=" content-area">
+						<div class="page-header">
+							<h4 class="page-title">Form Wizard</h4>
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="#">Forms</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Form Wizard</li>
+							</ol>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12">
+								<div class="card">
+									<div class="card-header">
+										<div class="card-title"> Form With Validation</div>
+									</div>
+									<div class="card-body p-6">
+										<div class="wizard-container">
+											<div class="wizard-card m-0" data-color="red" id="wizardProfile">
+												<form>
+													<div class="wizard-navigation">
+														<ul>
+															<li><a href="#about" data-toggle="tab">About</a></li>
+															<li><a href="#account" data-toggle="tab">Account</a></li>
+															<li><a href="#address" data-toggle="tab">Address</a></li>
+														</ul>
+													</div>
+
+													<div class="tab-content">
+														<div class="tab-pane" id="about">
+														  <div>
+																<div>
+																	<div class="input-group">
+																		<div class="form-group label-floating">
+																			<label class="form-label">First Name <small>(required)</small></label>
+																			<input name="firstname" type="text" class="form-control">
+																		</div>
+																	</div>
+
+																	<div class="input-group">
+																		<div class="form-group label-floating">
+																			<label class="form-label">Last Name <small>(required)</small></label>
+																			<input name="lastname" type="text" class="form-control">
+																		</div>
+																	</div>
+																	<div class="input-group">
+																		<div class="form-group label-floating">
+																			<label class="form-label">Email <small>(required)</small></label>
+																			<input name="email" type="email" class="form-control">
+																		</div>
+																	</div>
+																</div>
+
+															</div>
+														</div>
+														<div class="tab-pane" id="account">
+															<h4 class="info-text"> What are you doing? (checkboxes) </h4>
+															<div class="row">
+																<div class="col-sm-4">
+																	<div class="choice" data-toggle="wizard-checkbox">
+																		<input type="checkbox" name="jobb" value="Design">
+																		<div class="icon">
+																			<i class="fa fa-pencil"></i>
+																		</div>
+																		<h6>Design</h6>
+																	</div>
+																</div>
+																<div class="col-sm-4">
+																	<div class="choice" data-toggle="wizard-checkbox">
+																		<input type="checkbox" name="jobb" value="Code">
+																		<div class="icon">
+																			<i class="fa fa-terminal"></i>
+																		</div>
+																		<h6>Code</h6>
+																	</div>
+																</div>
+																<div class="col-sm-4">
+																	<div class="choice" data-toggle="wizard-checkbox">
+																		<input type="checkbox" name="jobb" value="Develop">
+																		<div class="icon">
+																			<i class="fa fa-laptop"></i>
+																		</div>
+																		<h6>Develop</h6>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="tab-pane" id="address">
+															<div class="row">
+																<div class="col-sm-12">
+																	<h4 class="info-text"> Are you living in a nice area? </h4>
+																</div>
+																<div class="col-sm-8 ">
+																	<div class="form-group label-floating">
+																		<label class="form-label">Street Name</label>
+																		<input type="text" class="form-control">
+																	</div>
+																</div>
+																<div class="col-sm-4">
+																	<div class="form-group label-floating">
+																		<label class="form-label">Street Number</label>
+																		<input type="text" class="form-control">
+																	</div>
+																</div>
+																<div class="col-sm-6 ">
+																	<div class="form-group label-floating">
+																		<label class="form-label">City</label>
+																		<input type="text" class="form-control">
+																	</div>
+																</div>
+																<div class="col-sm-6">
+																	<div class="form-group label-floating">
+																		<label class="form-label">Country</label>
+																		<select name="country" class="form-control">
+																			<option disabled="" value="..." selected="">select</option>
+																			<option value="Afghanistan"> Afghanistan </option>
+																			<option value="Albania"> Albania </option>
+																			<option value="Algeria"> Algeria </option>
+																			<option value="American Samoa"> American Samoa </option>
+																			<option value="Andorra"> Andorra </option>
+																			<option value="Angola"> Angola </option>
+																			<option value="Anguilla"> Anguilla </option>
+																			<option value="Antarctica"> Antarctica </option>
+																			<option value="...">...</option>
+																		</select>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="wizard-footer">
+														<div class="pull-right">
+															<input type='button' class='btn btn-next btn-fill btn-primary btn-wd m-0' name='next' value='Next'>
+															<input type='button' class='btn btn-finish btn-fill btn-success btn-wd m-0' name='finish' value='Finish'>
+														</div>
+
+														<div class="pull-left">
+															<input type='button' class='btn btn-previous btn-fill btn-default btn-wd m-0' name='previous' value='Previous'>
+														</div>
+														<div class="clearfix"></div>
+													</div>
+												</form>
+											</div>
+										</div> <!-- wizard container -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--footer-->
+			<footer class="footer">
+				<div class="container">
+					<div class="row align-items-center flex-row-reverse">
+						<div class="col-lg-12 col-sm-12 mt-3 mt-lg-0 text-center">
+							Copyright © 2018 <a href="http://www.bootstrapmb.com/" title="bootstrapmb">adminor</a>. Designed by <a href="#">Spruko</a> All rights reserved.
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- End Footer-->
+		</div>
+
+		<!-- Back to top-->
+		<a href="#top" id="back-to-top" style="display: inline;"><i class="fa fa-angle-up"></i></a>
+
+		<!-- Dashboard js -->
+		{load file="__STATIC__\ajs\vendors\jquery-3.2.1.min.js"}
+		{load file="__STATIC__\ajs\vendors\bootstrap.bundle.min.js"}
+		{load file="__STATIC__\ajs\vendors\jquery.sparkline.min.js"}
+		{load file="__STATIC__\ajs\vendors\selectize.min.js"}
+		{load file="__STATIC__\ajs\vendors\jquery.tablesorter.min.js"}
+		{load file="__STATIC__\ajs\vendors\circle-progress.min.js"}
+		{load file="__STATIC__\plugins\rating\jquery.rating-stars.js"}
+
+		<!-- Fullside-menu Js-->
+		{load file="__STATIC__\plugins\fullside-menu\jquery.slimscroll.min.js"}
+		{load file="__STATIC__\plugins\fullside-menu\waves.min.js"}
+
+		<!-- forn-wizard js-->
+		{load file="__STATIC__\plugins\forn-wizard\js\material-bootstrap-wizard.js"}
+		{load file="__STATIC__\plugins\forn-wizard\js\jquery.validate.min.js"}
+		{load file="__STATIC__\plugins\forn-wizard\js\jquery.bootstrap.js"}
+
+		<!-- Custom scroll bar Js-->
+		{load file="__STATIC__\plugins\scroll-bar\jquery.mCustomScrollbar.concat.min.js"}
+
+		<!-- Custom Js-->
+		{load file="__STATIC__\ajs\custom.js"}
+	</body>
+</html>
+{/block}

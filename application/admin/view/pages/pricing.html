@@ -1,0 +1,578 @@
+﻿{extend name="public/base"}
+		{block name="heads"}
+		<!-- Font Family -->
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+
+		<!-- Sidemenu Css -->
+		<link href="__STATIC__\plugins\fullside-menu\css\style.css" rel="stylesheet">
+		<link href="__STATIC__\plugins\fullside-menu\waves.min.css" rel="stylesheet">
+
+		<!-- Dashboard Css -->
+		<link href="__STATIC__\acss\dashboard.css" rel="stylesheet">
+
+		<!-- c3.js Charts Plugin -->
+		<link href="__STATIC__\plugins\charts-c3\c3-chart.css" rel="stylesheet">
+
+		<!-- Custom scroll bar css-->
+		<link href="__STATIC__\plugins\scroll-bar\jquery.mCustomScrollbar.css" rel="stylesheet">
+
+		<!---Font icons-->
+		<link href="__STATIC__\acss\icons.css" rel="stylesheet">
+
+	</head>
+	<body class="">
+		<div id="global-loader"></div>
+		<div class="page">
+			<div class="page-main">
+				{/block}	
+		{block name="others"}
+					<div class=" content-area">
+						<div class="page-header">
+							<h4 class="page-title">Pricing</h4>
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="#">Pages</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Pricing cards</li>
+							</ol>
+						</div>
+						<div class="row">
+							<div class="col-lg-3 col-xs-6 col-sm-6  primary">
+							    <div class="princing-item mb-4">
+									<div class="pricing-divider text-center">
+										<h3 class="text-light">Basic</h3>
+										<h4 class="my-0 display-2 text-light font-weight-normal mb-3"><span class="h3">$</span> 120 <span class="h5">/mo</span></h4>
+										<svg class='pricing-divider-img' enable-background='new 0 0 300 100' height='100px' id='Layer_1' preserveaspectratio='none' version='1.1' viewbox='0 0 300 100' width='300px' x='0px' xml:space='preserve' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' y='0px'>
+											<path class='deco-layer deco-layer--1' d='M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
+												c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z' fill='#FFFFFF' opacity='0.6'></path>
+											<path class='deco-layer deco-layer--2' d='M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729
+												c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z' fill='#FFFFFF' opacity='0.6'></path>
+											<path class='deco-layer deco-layer--3' d='M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716
+												H42.401L43.415,98.342z' fill='#FFFFFF' opacity='0.7'></path>
+											<path class='deco-layer deco-layer--4' d='M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+											c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z' fill='#FFFFFF'></path>
+										</svg>
+									</div>
+									<div class=" br-br-7 br-bl-7 bg-white mt-0 shadow text-center">
+										<ul class="list-group list-group-flush text-center">
+											<li class="list-group-item"><b>10</b> users included</li>
+											<li class="list-group-item"><b>2 GB</b> of storage</li>
+											<li class="list-group-item"><b>Free </b>Email support</li>
+											<li class="list-group-item"><b> 24/7</b> support</li>
+											<li class="list-group-item border-bottom-0"><b>Help center access</b></li>
+										</ul>
+										<div class="card-footer">
+											<button type="button" class="btn btn-primary btn-block">Sign up for free</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+                            <div class="col-lg-3 col-xs-6 col-sm-6  secondary">
+							    <div class="princing-item mb-4">
+									<div class="pricing-divider text-center">
+										<h3 class="text-light">Premium</h3>
+										<h4 class="my-0 display-2 text-light font-weight-normal mb-3"><span class="h3">$</span> 150 <span class="h5">/mo</span></h4>
+										<svg class='pricing-divider-img' enable-background='new 0 0 300 100' height='100px' id='Layer_1' preserveaspectratio='none' version='1.1' viewbox='0 0 300 100' width='300px' x='0px' xml:space='preserve' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' y='0px'>
+											<path class='deco-layer deco-layer--1' d='M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
+												c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z' fill='#FFFFFF' opacity='0.6'></path>
+											<path class='deco-layer deco-layer--2' d='M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729
+												c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z' fill='#FFFFFF' opacity='0.6'></path>
+											<path class='deco-layer deco-layer--3' d='M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716
+												H42.401L43.415,98.342z' fill='#FFFFFF' opacity='0.7'></path>
+											<path class='deco-layer deco-layer--4' d='M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+											c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z' fill='#FFFFFF'></path>
+										</svg>
+									</div>
+
+									<div class=" br-br-7 br-bl-7 bg-white mt-0 shadow text-center">
+										<ul class="list-group list-group-flush text-center">
+											<li class="list-group-item"><b>10</b> users included</li>
+											<li class="list-group-item"><b>2 GB</b> of storage</li>
+											<li class="list-group-item"><b>Free </b>Email support</li>
+											<li class="list-group-item"><b> 24/7</b> support</li>
+											<li class="list-group-item border-bottom-0"><b>Help center access</b></li>
+										</ul>
+										<div class="card-footer">
+											<button type="button" class="btn btn-secondary btn-block">Sign up for free</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-3 col-xs-6 col-sm-6 info">
+							    <div class="princing-item mb-4">
+									<div class="pricing-divider text-center">
+										<h3 class="text-light">Enterprise</h3>
+										<h4 class="my-0 display-2 text-light font-weight-normal mb-3"><span class="h3">$</span> 180 <span class="h5">/mo</span></h4>
+										<svg class='pricing-divider-img' enable-background='new 0 0 300 100' height='100px' id='Layer_1' preserveaspectratio='none' version='1.1' viewbox='0 0 300 100' width='300px' x='0px' xml:space='preserve' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' y='0px'>
+											<path class='deco-layer deco-layer--1' d='M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
+												c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z' fill='#FFFFFF' opacity='0.6'></path>
+											<path class='deco-layer deco-layer--2' d='M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729
+												c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z' fill='#FFFFFF' opacity='0.6'></path>
+											<path class='deco-layer deco-layer--3' d='M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716
+												H42.401L43.415,98.342z' fill='#FFFFFF' opacity='0.7'></path>
+											<path class='deco-layer deco-layer--4' d='M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+											c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z' fill='#FFFFFF'></path>
+										</svg>
+									</div>
+									<div class=" br-br-7 br-bl-7 bg-white mt-0 shadow text-center">
+										<ul class="list-group list-group-flush text-center">
+											<li class="list-group-item"><b>10</b> users included</li>
+											<li class="list-group-item"><b>2 GB</b> of storage</li>
+											<li class="list-group-item"><b>Free </b>Email support</li>
+											<li class="list-group-item"><b> 24/7</b> support</li>
+											<li class="list-group-item border-bottom-0"><b>Help center access</b></li>
+										</ul>
+										<div class="card-footer">
+										<button type="button" class="btn btn-info btn-block">Sign up for free</button></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-3 col-xs-6 col-sm-6 success">
+							    <div class="princing-item mb-4">
+									<div class="pricing-divider text-center">
+										<h3 class="text-light">Enterprise</h3>
+										<h4 class="my-0 display-2 text-light font-weight-normal mb-3"><span class="h3">$</span> 200 <span class="h5">/mo</span></h4>
+										<svg class='pricing-divider-img' enable-background='new 0 0 300 100' height='100px' id='Layer_1' preserveaspectratio='none' version='1.1' viewbox='0 0 300 100' width='300px' x='0px' xml:space='preserve' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' y='0px'>
+											<path class='deco-layer deco-layer--1' d='M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
+												c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z' fill='#FFFFFF' opacity='0.6'></path>
+											<path class='deco-layer deco-layer--2' d='M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729
+												c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z' fill='#FFFFFF' opacity='0.6'></path>
+											<path class='deco-layer deco-layer--3' d='M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716
+												H42.401L43.415,98.342z' fill='#FFFFFF' opacity='0.7'></path>
+											<path class='deco-layer deco-layer--4' d='M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+											c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z' fill='#FFFFFF'></path>
+										</svg>
+									</div>
+									<div class=" br-br-7 br-bl-7 bg-white mt-0 shadow text-center">
+										<ul class="list-group list-group-flush text-center">
+											<li class="list-group-item"><b>10</b> users included</li>
+											<li class="list-group-item"><b>2 GB</b> of storage</li>
+											<li class="list-group-item"><b>Free </b>Email support</li>
+											<li class="list-group-item"><b> 24/7</b> support</li>
+											<li class="list-group-item border-bottom-0"><b>Help center access</b></li>
+										</ul>
+										<div class="card-footer">
+											<button type="button" class="btn btn-success btn-block">Sign up for free</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<h4 class="card-title mt-4">Pricing cards 3 colums</h4>
+						<div class="row">
+							<div class="col-lg-4 col-xs-12  col-sm-12 primary">
+							    <div class="princing-item mb-4">
+									<div class="pricing-divider text-center">
+										<h3 class="text-light">Basic</h3>
+										<h4 class="my-0 display-2 text-light font-weight-normal mb-3"><span class="h3">$</span> 120 <span class="h5">/mo</span></h4>
+										<svg class='pricing-divider-img' enable-background='new 0 0 300 100' height='100px' id='Layer_1' preserveaspectratio='none' version='1.1' viewbox='0 0 300 100' width='300px' x='0px' xml:space='preserve' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' y='0px'>
+											<path class='deco-layer deco-layer--1' d='M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
+												c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z' fill='#FFFFFF' opacity='0.6'></path>
+											<path class='deco-layer deco-layer--2' d='M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729
+												c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z' fill='#FFFFFF' opacity='0.6'></path>
+											<path class='deco-layer deco-layer--3' d='M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716
+												H42.401L43.415,98.342z' fill='#FFFFFF' opacity='0.7'></path>
+											<path class='deco-layer deco-layer--4' d='M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+											c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z' fill='#FFFFFF'></path>
+										</svg>
+									</div>
+
+									<div class=" br-br-7 br-bl-7 bg-white mt-0 shadow text-center">
+										<ul class="list-group list-group-flush text-center">
+											<li class="list-group-item"><b>10</b> users included</li>
+											<li class="list-group-item"><b>2 GB</b> of storage</li>
+											<li class="list-group-item"><b>Free </b>Email support</li>
+											<li class="list-group-item"><b> 24/7</b> support</li>
+											<li class="list-group-item border-bottom-0"><b>Help center access</b></li>
+										</ul>
+										<div class="card-footer">
+											<button type="button" class="btn btn-primary btn-block">Sign up for free</button>
+										</div>
+									</div>
+							    </div>
+							</div>
+
+                            <div class="col-lg-4 col-xs-12 col-sm-12 secondary">
+							    <div class="princing-item mb-4">
+									<div class="pricing-divider text-center">
+										<h3 class="text-light">Premium</h3>
+										<h4 class="my-0 display-2 text-light font-weight-normal mb-3"><span class="h3">$</span> 150 <span class="h5">/mo</span></h4>
+										<svg class='pricing-divider-img' enable-background='new 0 0 300 100' height='100px' id='Layer_1' preserveaspectratio='none' version='1.1' viewbox='0 0 300 100' width='300px' x='0px' xml:space='preserve' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' y='0px'>
+											<path class='deco-layer deco-layer--1' d='M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
+												c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z' fill='#FFFFFF' opacity='0.6'></path>
+											<path class='deco-layer deco-layer--2' d='M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729
+												c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z' fill='#FFFFFF' opacity='0.6'></path>
+											<path class='deco-layer deco-layer--3' d='M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716
+												H42.401L43.415,98.342z' fill='#FFFFFF' opacity='0.7'></path>
+											<path class='deco-layer deco-layer--4' d='M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+											c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z' fill='#FFFFFF'></path>
+										</svg>
+									</div>
+									<div class=" br-br-7 br-bl-7 bg-white mt-0 shadow text-center">
+										<ul class="list-group list-group-flush text-center">
+											<li class="list-group-item"><b>10</b> users included</li>
+											<li class="list-group-item"><b>2 GB</b> of storage</li>
+											<li class="list-group-item"><b>Free </b>Email support</li>
+											<li class="list-group-item"><b> 24/7</b> support</li>
+											<li class="list-group-item border-bottom-0"><b>Help center access</b></li>
+										</ul>
+										<div class="card-footer">
+											<button type="button" class="btn btn-secondary btn-block">Sign up for free</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-4 col-xs-12 col-sm-12 info">
+							    <div class="princing-item mb-4">
+									<div class="pricing-divider text-center">
+										<h3 class="text-light">Enterprise</h3>
+										<h4 class="my-0 display-2 text-light font-weight-normal mb-3"><span class="h3">$</span> 180 <span class="h5">/mo</span></h4>
+										<svg class='pricing-divider-img' enable-background='new 0 0 300 100' height='100px' id='Layer_1' preserveaspectratio='none' version='1.1' viewbox='0 0 300 100' width='300px' x='0px' xml:space='preserve' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' y='0px'>
+											<path class='deco-layer deco-layer--1' d='M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
+												c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z' fill='#FFFFFF' opacity='0.6'></path>
+											<path class='deco-layer deco-layer--2' d='M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729
+												c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z' fill='#FFFFFF' opacity='0.6'></path>
+											<path class='deco-layer deco-layer--3' d='M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716
+												H42.401L43.415,98.342z' fill='#FFFFFF' opacity='0.7'></path>
+											<path class='deco-layer deco-layer--4' d='M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+											c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z' fill='#FFFFFF'></path>
+										</svg>
+									</div>
+									<div class=" br-br-7 br-bl-7 bg-white mt-0 shadow text-center">
+										<ul class="list-group list-group-flush text-center">
+										  <li class="list-group-item"><b>10</b> users included</li>
+										  <li class="list-group-item"><b>2 GB</b> of storage</li>
+										  <li class="list-group-item"><b>Free </b>Email support</li>
+										   <li class="list-group-item"><b> 24/7</b> support</li>
+										  <li class="list-group-item border-bottom-0"><b>Help center access</b></li>
+										</ul>
+										<div class="card-footer">
+											<button type="button" class="btn btn-info btn-block">Sign up for free</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<h4 class="card-title mt-4">Pricing cards 4 colums</h4>
+						<div class="row">
+							<div class="col-xs-6 col-sm-6 col-lg-3 ">
+								<div class="panel price  panel-color">
+									<div class="panel-heading p-0 text-center">
+										<h3>Personal</h3>
+									</div>
+									<div class="panel-body text-center">
+										<p class="lead"><strong>$15 /</strong>  month</p>
+									</div>
+									<ul class="list-group list-group-flush text-center">
+										<li class="list-group-item"><strong> 2 Free</strong> Domain Name</li>
+										<li class="list-group-item"><strong>3 </strong> One-Click Apps</li>
+										<li class="list-group-item"><strong> 1 </strong> Databases</li>
+										<li class="list-group-item"><strong> Money </strong> BackGuarantee</li>
+										<li class="list-group-item border-bottom-0"><strong> 24/7</strong> support</li>
+									</ul>
+									<div class="panel-footer text-center">
+										<a class="btn btn-lg btn-primary" href="#">Purchase Now!</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-lg-3 ">
+								<div class="panel price  panel-color">
+									<div class="panel-heading p-0 text-center">
+										<h3>Team</h3>
+									</div>
+									<div class="panel-body text-center">
+										<p class="lead"><strong>$25 /</strong> month</p>
+									</div>
+									<ul class="list-group list-group-flush text-center">
+										<li class="list-group-item"><strong> 3 Free</strong> Domain Name</li>
+										<li class="list-group-item"><strong>4 </strong> One-Click Apps</li>
+										<li class="list-group-item"><strong> 2 </strong> Databases</li>
+										<li class="list-group-item"><strong> Money </strong> BackGuarantee</li>
+										<li class="list-group-item border-bottom-0"><strong> 24/7</strong> support</li>
+									</ul>
+									<div class="panel-footer text-center">
+										<a class="btn btn-lg btn-primary" href="#">Purchase Now!</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-lg-3 ">
+								<div class="panel price  panel-color">
+									<div class="panel-heading p-0 text-center">
+										<h3>Corporate</h3>
+									</div>
+									<div class="panel-body text-center">
+										<p class="lead"><strong>$35 /</strong>  month</p>
+									</div>
+									<ul class="list-group list-group-flush text-center">
+										<li class="list-group-item"><strong> 4 Free</strong> Domain Name</li>
+										<li class="list-group-item"><strong>6 </strong> One-Click Apps</li>
+										<li class="list-group-item"><strong> 2 </strong> Databases</li>
+										<li class="list-group-item"><strong> Money </strong> BackGuarantee</li>
+										<li class="list-group-item border-bottom-0"><strong> 24/7</strong> support</li>
+									</ul>
+									<div class="panel-footer text-center">
+										<a class="btn btn-lg btn-primary" href="#">Purchase Now!</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-lg-3">
+								<div class="panel price  panel-color">
+									<div class="panel-heading p-0 text-center">
+										<h3>Business</h3>
+									</div>
+									<div class="panel-body text-center">
+										<p class="lead"><strong>$99 /</strong> month</p>
+									</div>
+									<ul class="list-group list-group-flush text-center">
+										<li class="list-group-item"><strong> 5 Free</strong> Domain Name</li>
+										<li class="list-group-item"><strong>8 </strong> One-Click Apps</li>
+										<li class="list-group-item"><strong> 2 </strong> Databases</li>
+										<li class="list-group-item"><strong> Money </strong> BackGuarantee</li>
+										<li class="list-group-item border-bottom-0"><strong> 24/7</strong> support</li>
+									</ul>
+									<div class="panel-footer text-center">
+										<a class="btn btn-lg btn-primary" href="#">Purchase Now!</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h4 class="card-title mt-4">Pricing cards 3 colums</h4>
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-lg-4">
+								<div class="panel price  panel-color">
+									<div class="panel-heading p-0 text-center">
+										<h3>Personal</h3>
+									</div>
+									<div class="panel-body text-center">
+										<p class="lead"><strong>$15 /</strong>  month</p>
+									</div>
+									<ul class="list-group list-group-flush text-center">
+										<li class="list-group-item"><strong> 2 Free</strong> Domain Name</li>
+										<li class="list-group-item"><strong>3 </strong> One-Click Apps</li>
+										<li class="list-group-item"><strong> 1 </strong> Databases</li>
+										<li class="list-group-item"><strong> Money </strong> BackGuarantee</li>
+										<li class="list-group-item border-bottom-0"><strong> 24/7</strong> support</li>
+									</ul>
+									<div class="panel-footer text-center">
+										<a class="btn btn-lg btn-primary" href="#">Purchase Now!</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12  col-lg-4">
+								<div class="panel price  panel-color">
+									<div class="panel-heading p-0 text-center">
+										<h3>Team</h3>
+									</div>
+									<div class="panel-body text-center">
+										<p class="lead"><strong>$25 /</strong> month</p>
+									</div>
+									<ul class="list-group list-group-flush text-center">
+										<li class="list-group-item"><strong> 3 Free</strong> Domain Name</li>
+										<li class="list-group-item"><strong>4 </strong> One-Click Apps</li>
+										<li class="list-group-item"><strong> 2 </strong> Databases</li>
+										<li class="list-group-item"><strong> Money </strong> BackGuarantee</li>
+										<li class="list-group-item border-bottom-0"><strong> 24/7</strong> support</li>
+									</ul>
+									<div class="panel-footer text-center">
+										<a class="btn btn-lg btn-primary" href="#">Purchase Now!</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12  col-sm-12  col-lg-4">
+								<div class="panel price  panel-color">
+									<div class="panel-heading p-0 text-center">
+										<h3>Corporate</h3>
+									</div>
+									<div class="panel-body br-br-7 br-bl-7 text-center">
+										<p class="lead"><strong>$35 /</strong>  month</p>
+									</div>
+									<ul class="list-group list-group-flush text-center">
+										<li class="list-group-item"><strong> 4 Free</strong> Domain Name</li>
+										<li class="list-group-item"><strong>6 </strong> One-Click Apps</li>
+										<li class="list-group-item"><strong> 2 </strong> Databases</li>
+										<li class="list-group-item"><strong> Money </strong> BackGuarantee</li>
+										<li class="list-group-item border-bottom-0"><strong> 24/7</strong> support</li>
+									</ul>
+									<div class=" panel-footer text-center">
+										<a class="btn btn-lg btn-primary border-bottom-0" href="#">Purchase Now!</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h4 class="card-title mt-4">Column pricing table</h4>
+						<div class="row">
+							<div class="col-sm-6 col-lg-3">
+								<div class="card">
+									<div class="card-body text-center pricing bg-primary">
+										<div class="card-category">Basic</div>
+										<div class="display-3 my-4">$10</div>
+										<ul class="list-unstyled leading-loose">
+											<li><strong>2 </strong> FreeDomain Name</li>
+											<li><strong>2</strong> One-Click Apps</li>
+											<li><strong>1</strong>  Databases</li>
+											<li><strong>Money</strong> BackGuarantee</li>
+											<li><strong>24/7</strong> Support</li>
+										</ul>
+										<div class="text-center mt-4">
+											<a href="#" class="btn btn-white btn-block">Buy Now</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-lg-3">
+								<div class="card">
+									<div class="card-body text-center  pricing bg-secondary ">
+										<div class="card-category">Premium</div>
+										<div class="display-3 my-4">$49</div>
+										<ul class="list-unstyled leading-loose">
+											<li><strong>3 </strong> FreeDomain Name</li>
+											<li><strong>5</strong> One-Click Apps</li>
+											<li><strong>3</strong>  Databases</li>
+											<li><strong>Money</strong> BackGuarantee</li>
+											<li><strong>24/7</strong> Support</li>
+										</ul>
+										<div class="text-center mt-4">
+											<a href="#" class="btn btn-white btn-block">Buy Now</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-lg-3">
+								<div class="card">
+									<div class="card-body text-center pricing bg-info">
+										<div class="card-category">Enterprise</div>
+										<div class="display-3 my-4">$99</div>
+										<ul class="list-unstyled leading-loose">
+											<li><strong>10 </strong> FreeDomain Name</li>
+											<li><strong>10</strong> One-Click Apps</li>
+											<li><strong>8</strong>  Databases</li>
+											<li><strong>Money</strong> BackGuarantee</li>
+											<li><strong>24/7</strong> Support</li>
+										</ul>
+										<div class="text-center mt-4">
+											<a href="#" class="btn btn-white btn-block">Buy Now</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-lg-3">
+								<div class="card">
+									<div class="card-body text-center  pricing bg-success ">
+										<div class="card-category">Unlimited</div>
+										<div class="display-3 my-4">$139</div>
+										<ul class="list-unstyled leading-loose">
+											<li><strong>12 </strong> FreeDomain Name</li>
+											<li><strong>10</strong> One-Click Apps</li>
+											<li><strong>6</strong>  Databases</li>
+											<li><strong>Money</strong> BackGuarantee</li>
+											<li><strong>24/7</strong> Support</li>
+										</ul>
+										<div class="text-center mt-4">
+											<a href="#" class="btn btn-white btn-block">Buy Now</a>
+										</div>
+									</div>
+								</div>
+						    </div>
+						</div>
+						<h4 class="card-title mt-4">3 Column pricing table</h4>
+						<div class="row">
+							<div class="col-sm-12  col-lg-4 ">
+								<div class="card">
+									<div class="card-body text-center pricing bg-primary">
+										<div class="card-category">Basic</div>
+										<div class="display-3 my-4">$10</div>
+										<ul class="list-unstyled leading-loose">
+											<li><strong>2 </strong> FreeDomain Name</li>
+											<li><strong>2</strong> One-Click Apps</li>
+											<li><strong>1</strong>  Databases</li>
+											<li><strong>Money</strong> BackGuarantee</li>
+											<li><strong>24/7</strong> Support</li>
+										</ul>
+										<div class="text-center mt-4">
+											<a href="#" class="btn btn-white btn-block">Buy Now</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12  col-lg-4">
+								<div class="card">
+									<div class="card-body text-center  pricing bg-secondary ">
+										<div class="card-category">Premium</div>
+										<div class="display-3 my-4">$49</div>
+										<ul class="list-unstyled leading-loose">
+											<li><strong>3 </strong> FreeDomain Name</li>
+											<li><strong>5</strong> One-Click Apps</li>
+											<li><strong>3</strong>  Databases</li>
+											<li><strong>Money</strong> BackGuarantee</li>
+											<li><strong>24/7</strong> Support</li>
+										</ul>
+										<div class="text-center mt-4">
+											<a href="#" class="btn btn-white btn-block">Buy Now</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-lg-4">
+								<div class="card">
+									<div class="card-body text-center pricing bg-info">
+										<div class="card-category">Enterprise</div>
+										<div class="display-3 my-4">$99</div>
+										<ul class="list-unstyled leading-loose">
+											<li><strong>10 </strong> FreeDomain Name</li>
+											<li><strong>10</strong> One-Click Apps</li>
+											<li><strong>8</strong>  Databases</li>
+											<li><strong>Money</strong> BackGuarantee</li>
+											<li><strong>24/7</strong> Support</li>
+										</ul>
+										<div class="text-center mt-4">
+											<a href="#" class="btn btn-white btn-block">Buy Now</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--footer-->
+			<footer class="footer">
+				<div class="container">
+					<div class="row align-items-center flex-row-reverse">
+						<div class="col-lg-12 col-sm-12 mt-3 mt-lg-0 text-center">
+							Copyright © 2018 <a href="http://www.bootstrapmb.com/" title="bootstrapmb">adminor</a>. Designed by <a href="#">Spruko</a> All rights reserved.
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- End Footer-->
+		</div>
+
+		<!-- Back to top -->
+		<a href="#top" id="back-to-top" style="display: inline;"><i class="fa fa-angle-up"></i></a>
+
+		<!-- Dashboard js -->
+		{load file="__STATIC__\ajs\vendors\jquery-3.2.1.min.js"}
+		{load file="__STATIC__\ajs\vendors\bootstrap.bundle.min.js"}
+		{load file="__STATIC__\ajs\vendors\jquery.sparkline.min.js"}
+		{load file="__STATIC__\ajs\vendors\selectize.min.js"}
+		{load file="__STATIC__\ajs\vendors\jquery.tablesorter.min.js"}
+		{load file="__STATIC__\ajs\vendors\circle-progress.min.js"}
+		{load file="__STATIC__\plugins\rating\jquery.rating-stars.js"}
+
+		<!-- Fullside-menu Js-->
+		{load file="__STATIC__\plugins\fullside-menu\jquery.slimscroll.min.js"}
+		{load file="__STATIC__\plugins\fullside-menu\waves.min.js"}
+
+		<!-- Custom scroll bar Js-->
+		{load file="__STATIC__\plugins\scroll-bar\jquery.mCustomScrollbar.concat.min.js"}
+
+		<!-- Custom Js-->
+		{load file="__STATIC__\ajs\custom.js"}
+	</body>
+</html>
+{/block}	

@@ -1,0 +1,166 @@
+﻿{extend name="public/base"}
+		{block name="heads"}
+		<!---Font Family-->
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+		
+		<!-- Sidemenu Css -->
+		<link href="__STATIC__\plugins\fullside-menu\css\style.css" rel="stylesheet">
+		<link href="__STATIC__\plugins\fullside-menu\waves.min.css" rel="stylesheet">
+		
+		<!-- Dashboard Css -->
+		<link href="__STATIC__\acss\dashboard.css" rel="stylesheet">
+
+		<!-- c3.js Charts Plugin -->
+		<link href="__STATIC__\plugins\charts-c3\c3-chart.css" rel="stylesheet">
+
+		<!-- Custom scroll bar css-->
+		<link href="__STATIC__\plugins\scroll-bar\jquery.mCustomScrollbar.css" rel="stylesheet">
+
+		<!---Font icons-->
+		<link href="__STATIC__\acss\icons.css" rel="stylesheet">
+
+	</head>
+	<body class="">
+		<div id="global-loader"></div>
+		<div class="page">
+			<div class="page-main">
+				{/block}	
+		{block name="others"}
+					<div class=" content-area">
+						<div class="page-header">
+							<h4 class="page-title">Tooltip and Popover</h4>
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="#">UI Design</a></li>
+								<li class="breadcrumb-item active" aria-current="page">TooltipandPopover</li>
+							</ol>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<div class="card">
+									<div class="card-header">
+										<h3 class="card-title">Static Tooltip</h3>
+									</div>
+									<div class="card-body text-center">
+										<div class="bd-example bd-example-tooltip-static">
+											<div class="tooltip tooltip-top" role="tooltip">
+												<div class="tooltip-inner">
+												  Tooltip on the top
+												</div>
+											</div>
+											<div class="tooltip tooltip-right" role="tooltip">
+												<div class="tooltip-inner">
+												  Tooltip on the right
+												</div>
+											</div>
+											<div class="tooltip tooltip-bottom" role="tooltip">
+												<div class="tooltip-inner">
+												  Tooltip on the bottom
+												</div>
+											</div>
+											<div class="tooltip tooltip-left" role="tooltip">
+												<div class="tooltip-inner">
+												  Tooltip on the left
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<h3 class="card-title">Interactive Demo Tooltip</h3>
+										<div class="bd-example tooltip-demo">
+											<div class="bd-example-tooltips">
+												<div class="row text-center">
+													<div class="col-md-3 mt-2 mb-2">
+														<button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+													</div>
+													<div class="col-md-3 mt-2 mb-2">
+														<button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+													</div>
+													<div class="col-md-3 mt-2 mb-2">
+														<button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+													</div>
+													<div class="col-md-3 mt-2 mb-2">
+														<button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="card">
+									<div class="card-header">
+										<h3 class="card-title">Basic Popover</h3>
+									</div>
+									<div class="card-body">
+										<div class="row text-center">
+											<div class="col-sm-6 col-lg-3 mt-2 mb-2">
+												<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-popover-color="default" data-placement="top" title="Popover top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+													Popover top
+												</button>
+											</div><!-- col-3 -->
+											<div class="col-sm-6 col-lg-3 mt-2 mb-2 ">
+												<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-popover-color="default" data-placement="bottom" title="Popover bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+													Popover bottom
+												</button>
+											</div><!-- col-3 -->
+											<div class="col-sm-6 col-lg-3 mt-2 mb-2">
+												<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-popover-color="default" data-placement="left" title="Popover left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+													Popover left
+												</button>
+											</div><!-- col-3 -->
+											<div class="col-sm-6 col-lg-3 mt-2 mb-2">
+												<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-popover-color="default" data-placement="right" title="Popover right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+													Popover right
+												</button>
+											</div><!-- col-3 -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--footer-->
+			<footer class="footer">
+				<div class="container">
+					<div class="row align-items-center flex-row-reverse">
+						<div class="col-lg-12 col-sm-12 mt-3 mt-lg-0 text-center">
+							Copyright © 2018 <a href="http://www.bootstrapmb.com/" title="bootstrapmb">adminor</a>. Designed by <a href="#">Spruko</a> All rights reserved.
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- End Footer-->
+		</div>
+
+		<!--Back to top -->
+		<a href="#top" id="back-to-top" style="display: inline;"><i class="fa fa-angle-up"></i></a>
+
+		<!-- Dashboard js -->
+		{load file="__STATIC__\ajs\vendors\jquery-3.2.1.min.js"}
+		{load file="__STATIC__\ajs\vendors\bootstrap.bundle.min.js"}
+		{load file="__STATIC__\ajs\vendors\jquery.sparkline.min.js"}
+		{load file="__STATIC__\ajs\vendors\selectize.min.js"}
+		{load file="__STATIC__\ajs\vendors\jquery.tablesorter.min.js"}
+		{load file="__STATIC__\ajs\vendors\circle-progress.min.js"}
+		{load file="__STATIC__\plugins\rating\jquery.rating-stars.js"}
+		
+		<!-- Fullside-menu Js-->
+		{load file="__STATIC__\plugins\fullside-menu\jquery.slimscroll.min.js"}
+		{load file="__STATIC__\plugins\fullside-menu\waves.min.js"}
+		
+		<!-- popover js -->
+        {load file="__STATIC__\ajs\popover.js"}
+
+		<!-- Custom scroll bar Js-->
+		{load file="__STATIC__\plugins\scroll-bar\jquery.mCustomScrollbar.concat.min.js"}
+
+		<!-- Custom Js-->
+		{load file="__STATIC__\ajs\custom.js"}
+
+	</body>
+</html>
+{/block}

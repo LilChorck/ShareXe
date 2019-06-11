@@ -1,0 +1,123 @@
+﻿<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="msapplication-TileColor" content="#0061da">
+		<meta name="theme-color" content="#1643a3">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+		<!-- Title -->
+		<title>adminor – Bootstrap 4 HTML5 Admin Dashboard Responsive Template</title>
+		<link rel="stylesheet" href="__STATIC__\afonts\fonts\font-awesome.min.css">
+		<link href="__STATIC__\plugins\count-down\jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+		<!-- Font family -->
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+		
+		<!-- Sidemenu Css -->
+		<link href="__STATIC__\plugins\fullside-menu\css\style.css" rel="stylesheet">
+		<link href="__STATIC__\plugins\fullside-menu\waves.min.css" rel="stylesheet">
+		
+		<!-- Dashboard Css -->
+		<link href="__STATIC__\acss\dashboard.css" rel="stylesheet">
+
+		<!-- c3.js Charts Plugin -->
+		<link href="__STATIC__\plugins\charts-c3\c3-chart.css" rel="stylesheet">
+
+		<!-- Custom scroll bar css-->
+		<link href="__STATIC__\plugins\scroll-bar\jquery.mCustomScrollbar.css" rel="stylesheet">
+		<link href="__STATIC__\plugins\count-down\flipclock.css" rel="stylesheet">
+
+		<!---Font icons-->
+		<link href="__STATIC__\acss\icons.css" rel="stylesheet">
+
+  </head>
+	<body>
+		<div class="login-img">
+			<div id="global-loader"></div>
+			<div class="page">
+				<div class="page-single">
+					<div class="container">
+						<div class="row text-center  mx-auto authentication">
+							<div class="col-lg-8 col-sm-12 center-block align-items-center construction  ">
+								<div class="text-white">
+									<div class="card-body">
+										<h2 class="display-2 mb-0"><strong>Coming Soon</strong></h2>
+										<div class="countdown-timer-wrapper">
+											<div class="timer" id="countdown"></div>
+										</div>
+										<p>we apologize for your in-convenience....any quaries contact me </p>
+										<h4><strong>Contact:</strong> adminor@demo.com</h4>
+										<div class="text-center ">
+											<div class="flex-c-m ">
+												<a href="#" class="login100-social-item bg1">
+													<i class="fa fa-facebook fb-blue"></i>
+												</a>
+												<a href="#" class="login100-social-item bg2">
+													<i class="fa fa-twitter"></i>
+												</a>
+												<a href="#" class="login100-social-item bg3">
+													<i class="fa fa-google"></i>
+												</a>
+											</div> 
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Dashboard js -->
+		{load file="__STATIC__\ajs\vendors\jquery-3.2.1.min.js"}
+		{load file="__STATIC__\ajs\vendors\bootstrap.bundle.min.js"}
+		{load file="__STATIC__\ajs\vendors\jquery.sparkline.min.js"}
+		{load file="__STATIC__\ajs\vendors\selectize.min.js"}
+		{load file="__STATIC__\ajs\vendors\jquery.tablesorter.min.js"}
+		{load file="__STATIC__\ajs\vendors\circle-progress.min.js"}
+		{load file="__STATIC__\plugins\rating\jquery.rating-stars.js"}
+		
+		<!-- Fullside-menu Js-->
+		{load file="__STATIC__\plugins\fullside-menu\jquery.slimscroll.min.js"}
+		{load file="__STATIC__\plugins\fullside-menu\waves.min.js"}
+		
+		<!-- Custom scroll bar Js-->
+		{load file="__STATIC__\plugins\scroll-bar\jquery.mCustomScrollbar.concat.min.js"}
+        
+		<!--Time Counter -->
+		
+		{load file="__STATIC__\plugins\counters\counter.js"}
+
+		<!--Counters -->
+		{load file="__STATIC__\plugins\count-down\countdown-timer.js"}
+		
+		<!-- Custom Js-->
+		{load file="__STATIC__\ajs\custom.js"}
+		
+		<!--Counters js-->
+		<script>
+			$(document).ready(function () {
+
+				var myDate = new Date();
+				myDate.setDate(myDate.getDate() + 2);
+				$("#countdown").countdown(myDate, function (event) {
+					$(this).html(
+						event.strftime(
+							'<div class="timer-wrapper"><div class="time">%D</div><span class="text">days</span></div><div class="timer-wrapper"><div class="time">%H</div><span class="text">hrs</span></div><div class="timer-wrapper"><div class="time">%M</div><span class="text">mins</span></div><div class="timer-wrapper"><div class="time">%S</div><span class="text">sec</span></div>'
+						)
+					);
+				});
+
+			});
+		</script>
+	</body>
+</html>

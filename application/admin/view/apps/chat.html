@@ -1,0 +1,148 @@
+﻿{extend name="public/base"}
+		{block name="heads"}
+		<!---Font family-->
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+
+		<!-- Sidemenu Css -->
+		<link href="__STATIC__\plugins\fullside-menu\css\style.css" rel="stylesheet">
+		<link href="__STATIC__\plugins\fullside-menu\waves.min.css" rel="stylesheet">
+
+		<!-- Dashboard Css -->
+		<link href="__STATIC__\acss\dashboard.css" rel="stylesheet">
+
+		<!-- Chat Plugin css-->
+		<link href="__STATIC__\plugins\chat\jquery.convform.css" rel="stylesheet">
+
+		<!-- Custom scroll bar css-->
+		<link href="__STATIC__\plugins\scroll-bar\jquery.mCustomScrollbar.css" rel="stylesheet">
+
+		<!---Font icons-->
+		<link href="__STATIC__\acss\icons.css" rel="stylesheet">
+
+	</head>
+	<body class="">
+		<div id="global-loader"></div>
+		<div class="page">
+			<div class="page-main">
+				{/block}	
+		{block name="others"}
+					<div class=" content-area">
+						<div class="page-header">
+							<h4 class="page-title">Chat</h4>
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="#">Apps</a></li>
+								<li class="breadcrumb-item active" aria-current="page">chat</li>
+							</ol>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="card">
+									<div class="card-body p-6">
+										<div id="demo">
+											<div class="vertical-align">
+												<div class="container p-0">
+													<div class="row">
+														<div class="col-sm-12">
+															<div class="no-border">
+																<div id="chat" class="conv-form-wrapper">
+																	<form method="GET" class="hidden">
+																		<select data-conv-question="Hello! I'm a adminor created from a HTML form. Can I show you some features? (this question comes from a select)" name="first-question">
+																			<option value="yes">Yes</option>
+																			<option value="sure">Sure!</option>
+																		</select>
+																		<input type="text" name="name" data-conv-question="Alright! First, tell me your full name, please.|Okay! Please, tell me your name first.">
+																		<input type="text" data-conv-question="Howdy, {name}:0! It's a pleasure to meet you. (note that this question doesn't expect any answer)" data-no-answer="true">
+																		<input type="text" data-conv-question="This plugin supports multi-select too. Let's see an example." data-no-answer="true">
+																		<select name="multi[]" data-conv-question="What kind of music do you like?" multiple="">
+																			<option value="Rock">Rock</option>
+																			<option value="Pop">Pop</option>
+																			<option value="Country">Country</option>
+																			<option value="Classic">Classic</option>
+																		</select>
+																		<select name="programmer" data-callback="storeState" data-conv-question="So, are you a programmer? (this question will fork the conversation based on your answer)">
+																			<option value="yes">Yes</option>
+																			<option value="no">No</option>
+																		</select>
+																		<div data-conv-fork="programmer">
+																			<div data-conv-case="yes">
+																				<input type="text" data-conv-question="A fellow programmer! Cool." data-no-answer="true">
+																			</div>
+																			<div data-conv-case="no">
+																				<select name="thought" data-conv-question="Have you ever thought about learning? Programming is fun!">
+																					<option value="yes">Yes</option>
+																					<option value="no">No..</option>
+																				</select>
+																			</div>
+																		</div>
+																		<input type="text" data-conv-question="convForm also supports regex patterns. Look:" data-no-answer="true">
+																		<input data-conv-question="Type in your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" id="email" type="email" name="email" required="" placeholder="What's your e-mail?">
+																		<input data-conv-question="Now tell me a secret (like a password)" type="password" data-minlength="6" id="senha" name="password" required="" placeholder="password">
+																		<select data-conv-question="Selects also support callback functions. For example, try one of these:">
+																				<option value="google" data-callback="google">Google</option>
+																				<option value="bing" data-callback="bing">Bing</option>
+																		</select>
+																		<select name="callbackTest" data-conv-question="You can do some cool things with callback functions. Want to rollback to the 'programmer' question before?">
+																			<option value="yes" data-callback="rollback">Yes</option>
+																			<option value="no" data-callback="restore">No</option>
+																		</select>
+																		<select data-conv-question="This is it! If you like me, consider donating! If you need support, contact me. When the form gets to the end, the plugin submits it normally, like you had filled it.">
+																			<option value="">Awesome!</option>
+																		</select>
+																	</form>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--footer-->
+			<footer class="footer">
+				<div class="container">
+					<div class="row align-items-center flex-row-reverse">
+						<div class="col-lg-12 col-sm-12 mt-3 mt-lg-0 text-center">
+							Copyright © 2018 <a href="http://www.bootstrapmb.com/" title="bootstrapmb">adminor</a>. Designed by <a href="#">Spruko</a> All rights reserved.
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- End Footer-->
+		</div>
+
+		<!-- Back to top -->
+		<a href="#top" id="back-to-top" style="display: inline;"><i class="fa fa-angle-up"></i></a>
+
+		<!-- Dashboard js -->
+		{load file="__STATIC__/ajs\vendors\jquery-3.2.1.min.js"}
+		{load file="__STATIC__/ajs\vendors\bootstrap.bundle.min.js"}
+		{load file="__STATIC__/ajs\vendors\jquery.sparkline.min.js"}
+		{load file="__STATIC__/ajs\vendors\selectize.min.js"}
+		{load file="__STATIC__/ajs\vendors\jquery.tablesorter.min.js"}
+		{load file="__STATIC__/ajs\vendors\circle-progress.min.js"}
+		{load file="__STATIC__/plugins\rating\jquery.rating-stars.js"}
+
+		<!-- Fullside-menu Js-->
+		{load file="__STATIC__/plugins\fullside-menu\jquery.slimscroll.min.js"}
+		{load file="__STATIC__/plugins\fullside-menu\waves.min.js"}
+
+		<!-- Chat js -->
+		{load file="__STATIC__/plugins\chat\jquery.convform.js"}
+		{load file="__STATIC__/plugins\chat\autosize.min.js"}
+		{load file="__STATIC__/ajs\chat.js"}
+
+		<!-- Custom scroll bar Js-->
+		{load file="__STATIC__/plugins\scroll-bar\jquery.mCustomScrollbar.concat.min.js"}
+
+		<!-- Custom Js-->
+		{load file="__STATIC__/ajs\custom.js"}
+	</body>
+</html>
+{/block}

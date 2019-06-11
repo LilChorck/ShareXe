@@ -1,0 +1,148 @@
+﻿{extend name="public/base"}
+		{block name="heads"}
+		<!-- Font Family -->
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+
+		<!-- Sidemenu Css -->
+		<link href="__STATIC__\plugins\fullside-menu\css\style.css" rel="stylesheet">
+		<link href="__STATIC__\plugins\fullside-menu\waves.min.css" rel="stylesheet">
+
+		<!-- Dashboard Css -->
+		<link href="__STATIC__\acss\dashboard.css" rel="stylesheet">
+
+		<!-- c3.js Charts Plugin -->
+		<link href="__STATIC__\plugins\charts-c3\c3-chart.css" rel="stylesheet">
+
+		<!-- Custom scroll bar css-->
+		<link href="__STATIC__\plugins\scroll-bar\jquery.mCustomScrollbar.css" rel="stylesheet">
+
+		<!---Font icons-->
+		<link href="__STATIC__\acss\icons.css" rel="stylesheet">
+		<link href="__STATIC__\plugins\sweet-alert\sweetalert.css" rel="stylesheet">
+
+	</head>
+	<body class="">
+		<div id="global-loader"></div>
+		<div class="page">
+			<div class="page-main">
+				{/block}	
+		{block name="others"}
+					<div class=" content-area">
+						<div class="page-header">
+							<h4 class="page-title">Sweet-alert</h4>
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="#">Apps</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Sweet-alert</li>
+							</ol>
+						</div>
+						<div class="row row-deck">
+							<div class="col-md-6 ">
+								<div class="card">
+									<div class="card-header">
+										<h3 class="card-title">Basic Sweet-alert</h3>
+									</div>
+									<div class="card-body">
+										<table class="table card-table border">
+											<tr>
+												<td>Title</td>
+												<td><input type='text' class="form-control" placeholder='Title text' id='title'></td>
+											</tr>
+											<tr>
+												<td>Message</td>
+												<td><input type='text' class="form-control" placeholder='Your message' id='message'></td>
+											</tr>
+											<tr>
+												<td colspan='2' class="mt-5 text-center">
+													<input type='button' class="btn btn-primary mt-2" value='Simple alert' id='but1'>&nbsp;
+													<input type='button' class="btn btn-primary mt-2" value='Alert with title' id='but2'>&nbsp;
+													<input type='button' class="btn btn-primary mt-2" value='Alert with image' id='but3'>&nbsp;
+													<input type='button' class="btn btn-primary mt-2" value='With timer' id='but4'>
+												</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+                             </div>
+							 <div class="col-md-6 ">
+								<div class="card text-center">
+									<div class="card-header">
+										<h3 class="card-title">Alert Types</h3>
+									</div>
+									<div class="card-body mt-7">
+										<p>You can show following types of message box &#8211; You need to specify this in <code>type</code> property as value.</p>
+
+										<input type='button' class="btn btn-success mt-2" value='success alert' id='click'>
+										<input type='button' class="btn btn-warning mt-2" value='Warning alert' id='click1'>
+										<input type='button' class="btn btn-danger mt-2" value='Danger alert' id='click2'>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-12 ">
+								<div class="card">
+									<div class="card-header">
+										<h3 class="card-title">Prompt and confirm box Demo</h3>
+									</div>
+									<div class="card-body">
+										<table class="table card-table border">
+											<tr>
+												<td><input type='button' class="btn btn-secondary btn-block " value='Prompt' id='prompt'></td>
+												<td><input type='button' class="btn btn-primary btn-block" value='Confirm' id='confirm'></td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--footer-->
+			<footer class="footer">
+				<div class="container">
+					<div class="row align-items-center flex-row-reverse">
+						<div class="col-lg-12 col-sm-12 mt-3 mt-lg-0 text-center">
+							Copyright © 2018 <a href="http://www.bootstrapmb.com/" title="bootstrapmb">adminor</a>. Designed by <a href="#">Spruko</a> All rights reserved.
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- End Footer-->
+		</div>
+
+		<!-- Back to top -->
+		<a href="#top" id="back-to-top" style="display: inline;"><i class="fa fa-angle-up"></i></a>
+
+		<!-- Dashboard js -->
+		{load file="__STATIC__/ajs\vendors\jquery-3.2.1.min.js"}
+		{load file="__STATIC__/ajs\vendors\bootstrap.bundle.min.js"}
+		{load file="__STATIC__/ajs\vendors\jquery.sparkline.min.js"}
+		{load file="__STATIC__/ajs\vendors\selectize.min.js"}
+		{load file="__STATIC__/ajs\vendors\jquery.tablesorter.min.js"}
+		{load file="__STATIC__/ajs\vendors\circle-progress.min.js"}
+		{load file="__STATIC__\plugins\rating\jquery.rating-stars.js"}
+
+		<!-- Fullside-menu Js-->
+		{load file="__STATIC__\plugins\fullside-menu\jquery.slimscroll.min.js"}
+		{load file="__STATIC__\plugins\fullside-menu\waves.min.js"}
+
+		<!-- Popover js -->
+		{load file="__STATIC__/ajs\popover.js"}
+
+		<!-- Sweet alert Plugin -->
+		{load file="__STATIC__\plugins\sweet-alert\sweetalert.min.js"}
+		{load file="__STATIC__/ajs\sweet-alert.js"}
+
+		<!-- Custom scroll bar Js-->
+		{load file="__STATIC__\plugins\scroll-bar\jquery.mCustomScrollbar.concat.min.js"}
+
+		<!-- Custom Js-->
+		{load file="__STATIC__/ajs\custom.js"}
+
+	</body>
+</html>
+{/block}
